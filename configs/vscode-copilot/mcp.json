@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "claude-mem-copilot": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "claude-mem-copilot"]
+    }
+  }
+}

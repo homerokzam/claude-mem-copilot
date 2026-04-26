@@ -1,0 +1,9 @@
+node_modules/
+dist/
+coverage/
+.vscode/
+.env
+.env.*
+*.log
+.DS_Store
+.claude-mem-copilot/

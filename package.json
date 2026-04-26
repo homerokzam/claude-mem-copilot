@@ -1,0 +1,58 @@
+{
+  "name": "claude-mem-copilot",
+  "version": "0.1.0",
+  "description": "VS Code Copilot MCP server and hooks for Claude-Mem project memory.",
+  "type": "module",
+  "bin": {
+    "claude-mem-copilot": "./dist/cli.js"
+  },
+  "files": [
+    "dist/",
+    "hooks/",
+    "configs/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/cli.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "keywords": [
+    "mcp",
+    "copilot",
+    "vscode",
+    "claude-mem",
+    "memory",
+    "ai-agents"
+  ],
+  "author": "homerokzam",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/homerokzam/claude-mem-copilot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/homerokzam/claude-mem-copilot/issues"
+  },
+  "homepage": "https://github.com/homerokzam/claude-mem-copilot#readme",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.5",
+    "jsonc-parser": "^3.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.2.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}

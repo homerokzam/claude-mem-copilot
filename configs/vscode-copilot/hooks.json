@@ -1,0 +1,28 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "type": "command",
+        "command": "npx -y claude-mem-copilot hook vscode-copilot sessionstart"
+      }
+    ],
+    "PreToolUse": [
+      {
+        "type": "command",
+        "command": "npx -y claude-mem-copilot hook vscode-copilot pretooluse"
+      }
+    ],
+    "PostToolUse": [
+      {
+        "type": "command",
+        "command": "npx -y claude-mem-copilot hook vscode-copilot posttooluse"
+      }
+    ],
+    "PreCompact": [
+      {
+        "type": "command",
+        "command": "npx -y claude-mem-copilot hook vscode-copilot precompact"
+      }
+    ]
+  }
+}
